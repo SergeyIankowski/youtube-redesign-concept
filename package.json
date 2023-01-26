@@ -1,0 +1,15 @@
+{
+  "name": "youtube-redesign-concept",
+  "version": "1.0.0",
+  "description": "Task-2 html and css markup for innowise trainingship",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "youtube",
+    "redesign"
+  ],
+  "author": "Sergey Iankowski <https://github.com/SergeyIankowski>",
+  "license": "ISC"
+}
