@@ -1,10 +1,12 @@
 {
-  "name": "youtube-redesign-concept",
+  "name": "my-webpack-project",
   "version": "1.0.0",
-  "description": "Task-2 html and css markup for innowise trainingship",
+  "description": "My webpack project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "sass:build": "sass scss/main.scss style.css",
+  "sass:watch": "sass --watch scss/main.scss:style.css"
+
   },
   "keywords": [
     "youtube",
