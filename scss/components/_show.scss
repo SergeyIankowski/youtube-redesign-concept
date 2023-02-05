@@ -1,0 +1,38 @@
+.show-container {
+  position: relative;
+  width: 540px;
+  height: 250px;
+}
+.show-container_small {
+  width: 250px;
+  height: 150px;
+}
+.show {
+  border-radius: 14px;
+  z-index: 2;
+  width: inherit;
+  height: inherit;
+}
+.show_small {
+  width: inherit;
+  height: inherit;
+}
+.show__time {
+  position: absolute;
+  bottom: 14px;
+  right: 10px;
+  padding: 3px 9px;
+  border-radius: 12px;
+  background-color: $time-duration-caption-bg-color;
+  color: $time-duration-text-color;
+  font: normal 400 14px/18px "Mulish", sans-serif;
+}
+@media (max-width: $mobile) {
+  .show-container {
+    width: 100%;
+  }
+  .show {
+    width: 100%;
+    height: calc(52vw - 15px);
+  }
+}
