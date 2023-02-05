@@ -1,0 +1,18 @@
+.button {
+  font: normal 400 16px/20px "Mulish", sans-serif;
+  padding: 10px 20px;
+  background-color: $button-bg-color;
+  border: 0;
+  border-radius: 20px;
+  color: $button-text-color;
+  width: 154px;
+  height: 40px;
+}
+@media (max-width: $breakpoint-one) {
+  .button {
+    font: normal 400 12px/14px "Mulish", sans-serif;
+    padding: 5px;
+    width: 95px;
+    height: 40px;
+  }
+}

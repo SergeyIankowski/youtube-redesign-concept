@@ -1,2 +1,15 @@
-@import './abstract/variables';
-@import './base/global';
+@import "./abstract/variables";
+@import "./base/reset";
+@import "./base/global";
+
+@import "./components/wrapper";
+@import "./components/header";
+@import "./components/search-input";
+@import "./components/hamburger";
+@import "./components/main";
+@import "./components/sidebar";
+@import "./components/sidebar-link";
+@import "./components/subscriptions";
+@import "./components/preview-container";
+@import "./components/video-preview";
+@import "./components/buttons";

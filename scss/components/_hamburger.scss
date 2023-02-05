@@ -1,0 +1,18 @@
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger__line {
+  background-color: black;
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+@media (max-width: $mobile) {
+  .hamburger {
+    display: none;
+  }
+}

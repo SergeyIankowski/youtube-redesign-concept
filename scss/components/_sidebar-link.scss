@@ -1,0 +1,14 @@
+.sidebar__link {
+  font: normal 400 16px/20px "Mulish", sans-serif;
+  color: $sections-text-color;
+  cursor: pointer;
+
+  &:hover {
+    color: $sections-text-color-checked;
+  }
+}
+@media (max-width: $mobile) {
+  .sidebar__link {
+    font: normal 400 10px/13px "Mulish", sans-serif;
+  }
+}
