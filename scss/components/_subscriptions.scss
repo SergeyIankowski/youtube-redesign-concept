@@ -1,0 +1,32 @@
+.subscriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin-bottom: 106px;
+
+  & :first-child {
+    margin-bottom: 4px;
+  }
+}
+.subscriptions__title {
+  font: normal 700 18px/23px "Mulish", sans-serif;
+}
+.subscriptions__item {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  align-items: center;
+  gap: 22px;
+
+  height: 26px;
+}
+.subscription-link__icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+@media (max-width: $tablet) {
+  .subscriptions {
+    display: none;
+  }
+}
