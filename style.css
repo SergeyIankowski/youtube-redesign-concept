@@ -485,6 +485,8 @@ table {
   gap: 40px;
   width: 100%;
   overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .preview-container__body::-webkit-scrollbar {
   display: none;
@@ -534,9 +536,14 @@ table {
   position: relative;
 }
 
-.vodeo-preview__show {
+.video-preview__show {
   border-radius: 14px;
   z-index: 2;
+  width: 540px;
+  height: 250px;
+}
+
+.video-preview__show_small {
   width: 250px;
   height: 150px;
 }
@@ -568,7 +575,7 @@ table {
   .video-preview__show-container {
     width: 100%;
   }
-  .vodeo-preview__show {
+  .video-preview__show {
     width: 100%;
     height: calc(52vw - 15px);
   }
