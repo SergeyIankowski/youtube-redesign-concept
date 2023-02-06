@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Youtube</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__left-elements-block">
+          <div class="hamburger header__hamburger">
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+          </div>
+          <img src="./assets/svg/logo.svg" alt="logo icon" class="logo" />
+          <div class="header__input search-input">
+            <input
+              type="text"
+              class="search-input__field"
+              placeholder="Search"
+            />
+            <img
+              src="./assets//svg/magnifier.svg"
+              alt="magnifier__icon"
+              class="search-input__magnifier"
+            />
+          </div>
+        </div>
+
+        <div class="header__right-elements-block">
+          <div class="header__controls">
+            <div class="controls__item header__camera">
+              <img
+                src="./assets/svg/camera.svg"
+                class="controls__item-icon header__camera-icon"
+              />
+            </div>
+            <div class="controls__item header__sections">
+              <img
+                src="./assets/svg/dots.svg"
+                class="controls__item-icon header__sections-icon"
+              />
+            </div>
+            <div class="controls__item header__notifications">
+              <img
+                src="./assets/svg/bell.svg"
+                class="controls__item-icon header__notifications-icon"
+              />
+              <span class="header__notifications-value">3</span>
+            </div>
+          </div>
+          <div class="header__profile">
+            <img src="./assets/images/userpic.png" class="profile__icon" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper">
+        <aside class="sidebar main__sidebar">
+          <div class="sidebar__links">
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/home.svg"
+                class="side-link__image"
+                style="fill: #ff0000"
+              /><span class="side-link__text">Home</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/trending.svg"
+                class="side-link__image"
+              /><span class="side-link__text">Trending</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/subscriptions.svg"
+                class="side-link__image"
+              /><span class="side-link__text">Subscriptions</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/library.svg"
+                class="side-link__image"
+              /><span class="side-link__text">Library</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/history.svg"
+                class="side-link__image"
+              /><span class="side-link__text">History</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img src="./assets/svg/clock.svg" class="side-link__image" /><span
+                class="side-link__text"
+                >Watch later</span
+              >
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/favourites.svg"
+                class="side-link__image"
+              /><span class="side-link__text">Favourites</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img src="./assets/svg/heart.svg" class="side-link__image" /><span
+                class="side-link__text"
+                >Liked videos</span
+              >
+            </div>
+            <div class="sidebar__link side-link">
+              <img src="./assets/svg/music.svg" class="side-link__image" /><span
+                class="side-link__text"
+                >Music</span
+              >
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/gamepad.svg"
+                class="side-link__image"
+              /><span class="side-link__text">Games</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/more-arrow.svg"
+                class="side-link__image"
+              /><span class="side-link__text">Show more</span>
+            </div>
+          </div>
+          <div class="sidebar__subscriptions subscriptions">
+            <h3 class="subscriptions__title">Subscriptions</h3>
+            <div class="subscriptions__item subscription-link sidebar__link">
+              <img
+                src="./assets/images/userpic-1.png"
+                class="subscription-link__icon"
+              /><span class="subscriptions__item-text">Gussie Singleton</span>
+            </div>
+            <div class="subscriptions__item subscription-link sidebar__link">
+              <img
+                src="./assets/images/userpic-2.png"
+                class="subscription-link__icon"
+              /><span class="subscriptions__item-text">Nora Francis</span>
+            </div>
+            <div class="subscriptions__item subscription-link sidebar__link">
+              <img
+                src="./assets/images/userpic-3.png"
+                class="subscription-link__icon"
+              /><span class="subscriptions__item-text">Belle Briggs</span>
+            </div>
+            <div class="subscriptions__item subscription-link sidebar__link">
+              <img
+                src="./assets/images/userpic-4.png"
+                class="subscription-link__icon"
+              /><span class="subscriptions__item-text">Eunice Cortez</span>
+            </div>
+            <div class="subscriptions__item subscription-link sidebar__link">
+              <img
+                src="./assets/images/userpic-5.png"
+                class="subscription-link__icon"
+              /><span class="subscriptions__item-text">Emma Hanson</span>
+            </div>
+            <div class="subscriptions__item subscription-link sidebar__link">
+              <img
+                src="./assets/images/userpic-6.png"
+                class="subscription-link__icon"
+              /><span class="subscriptions__item-text">Leah Berry</span>
+            </div>
+          </div>
+          <div class="sidebar__link side-link sidebar__settings-link">
+            <img
+              src="./assets/svg/settings-gear.svg"
+              class="side-link__image"
+            /><span class="side-link__text">Settings</span>
+          </div>
+        </aside>
+
+        <div class="main__content">
+          <section class="channel-page">
+            <div class="channel-page__image"></div>
+            <section class="channel-page__main">
+              <div class="channel-page__header">
+                <div class="channel-page__header-left-side-container">
+                  <img
+                    src="./assets/images/userpic-2.png"
+                    alt="user logo"
+                    class="channel-page__logo"
+                  />
+                  <h3 class="channel-page__owner-name">Margaret Phelps</h3>
+                  <p class="channel-page__subscription-info caption">
+                    <span class="channel-page__subscription-value">245K</span>
+                    subscribed
+                  </p>
+                </div>
+
+                <div class="channel-page__header-right-side-container">
+                  <a href="#">
+                    <img
+                      src="./assets/svg/bell.svg"
+                      class="channel-page__notification-icon"
+                    />
+                  </a>
+                  <button class="button channel-page__button">
+                    Subscribe <span class="button-value">2.3m</span>
+                  </button>
+                </div>
+              </div>
+              <div class="channel-page__main-container">
+                <div class="channel-page__sections-links section-links">
+                  <ul class="sections-links__list">
+                    <li class="section-links__item">
+                      <a
+                        href="#"
+                        class="sections-links__link sections-links__link_active"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="sections-links__item">
+                      <a href="#" class="sections-links__link">Videos</a>
+                    </li>
+                    <li class="sections-links__item">
+                      <a href="#" class="sections-links__link">Playlists</a>
+                    </li>
+                    <li class="sections-links__item">
+                      <a href="#" class="sections-links__link">Channels</a>
+                    </li>
+                    <li class="sections-links__item">
+                      <a href="#" class="sections-links__link">Discussion</a>
+                    </li>
+                    <li class="sections-links__item">
+                      <a href="#" class="sections-links__link">About</a>
+                    </li>
+                    <li class="sections-links__item">
+                      <img
+                        src="./assets/svg/magnifier.svg"
+                        class="sections-links__search-icon"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="channel-page__video-description video-description">
+                  <div class="video-description__show show-container">
+                    <img
+                      src="./assets/images/video-image-15.png"
+                      class="video-description__image show"
+                    />
+                    <span class="video-description__time show__time">7:36</span>
+                  </div>
+                  <div class="video-description__info">
+                    <p class="video-description__title">
+                      Choosing The Best Audio Player Software For Your Computer
+                    </p>
+                    <p class="video-description__text">
+                      Your cheap internet-based banner advertising will become
+                      one of the sought for ads there are. Today, the world of
+                      Internet advertising is rapidly evolving beyond banner ads
+                      and intrusive pop-ups. Bayles A common medium for
+                      advertising on the Internet is the use of banner ads.
+                    </p>
+                    <div class="video-description__details">
+                      <span class="video-description__views caption"
+                        >54k views</span
+                      >
+                      <span class="video-description__time caption"
+                        >11 months ago</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="channel-page__subscriptions sidebar__subscriptions subscriptions"
+                >
+                  <h3 class="subscriptions__title subscriptions__title_small">
+                    Recommended channel
+                  </h3>
+                  <div
+                    class="subscriptions__item subscription-link subscription-link_big"
+                  >
+                    <img
+                      src="./assets/images/userpic-1.png"
+                      class="subscription-link__icon"
+                    /><span class="subscriptions__item-text"
+                      >Gussie Singleton</span
+                    >
+                  </div>
+                  <div
+                    class="subscriptions__item subscription-link subscription-link_big"
+                  >
+                    <img
+                      src="./assets/images/userpic-2.png"
+                      class="subscription-link__icon"
+                    /><span class="subscriptions__item-text">Nora Francis</span>
+                  </div>
+                  <div
+                    class="subscriptions__item subscription-link subscription-link_big"
+                  >
+                    <img
+                      src="./assets/images/userpic-3.png"
+                      class="subscription-link__icon"
+                    /><span class="subscriptions__item-text">Belle Briggs</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="preview-container preview-container_small-items">
+            <div class="preview-container__head">
+              <div class="preview-container__head-info">
+                <h3 class="preview-container__head-text">Food & Drink</h3>
+              </div>
+              <div class="preview-container__controls">
+                <img
+                  src="./assets/svg/left-arrow.svg"
+                  class="preview-container__control-left"
+                />
+                <img
+                  src="./assets/svg/right-arrow.svg"
+                  class="preview-container__control-right"
+                />
+              </div>
+            </div>
+            <div class="preview-container__body">
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-9.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time">7:08</span>
+                </div>
+                <h4 class="video-preview__title">Astronomy Or Astrology</h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">240k views</span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >4 months ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Food & Drink</span
+                  >
+                </div>
+              </div>
+
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-10.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time">2:19</span>
+                </div>
+                <h4 class="video-preview__title">Advertising Outdoors</h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">13k views</span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >15 days ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Food & Drink</span
+                  >
+                </div>
+              </div>
+
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-11.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time">9:05</span>
+                </div>
+                <h4 class="video-preview__title">Radio Astronomy</h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">1k views</span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >11 months ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Food & Drink</span
+                  >
+                </div>
+              </div>
+
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-12.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time">7:08</span>
+                </div>
+                <h4 class="video-preview__title">
+                  A Brief History Of Creation
+                </h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">80k views </span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >3 days ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Dollie Blair</span
+                  >
+                </div>
+              </div>
+
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-13.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time">3:40</span>
+                </div>
+                <h4 class="video-preview__title">A Good Autoresponder</h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">45k views</span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >2 months ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Food & Drink</span
+                  >
+                </div>
+              </div>
+
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-14.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time">1:56</span>
+                </div>
+                <h4 class="video-preview__title">Baby Monitor Technology</h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">86k views</span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >7 days ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Food & Drink</span
+                  >
+                </div>
+              </div>
+
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-14.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time">4:15</span>
+                </div>
+                <h4 class="video-preview__title">Asteroids</h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">123k views</span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >4 months ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Food & Drink</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
