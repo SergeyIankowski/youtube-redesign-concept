@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Youtube</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__left-elements-block">
+          <div class="hamburger header__hamburger">
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+          </div>
+          <img src="./assets/svg/logo.svg" alt="logo icon" class="logo" />
+          <div class="header__input search-input">
+            <input
+              type="text"
+              class="search-input__field"
+              placeholder="Search"
+            />
+            <img
+              src="./assets//svg/magnifier.svg"
+              alt="magnifier__icon"
+              class="search-input__magnifier"
+            />
+          </div>
+        </div>
+
+        <div class="header__right-elements-block">
+          <div class="header__controls">
+            <div class="controls__item header__camera">
+              <img
+                src="./assets/svg/camera.svg"
+                class="controls__item-icon header__camera-icon"
+              />
+            </div>
+            <div class="controls__item header__sections">
+              <img
+                src="./assets/svg/dots.svg"
+                class="controls__item-icon header__sections-icon"
+              />
+            </div>
+            <div class="controls__item header__notifications">
+              <img
+                src="./assets/svg/bell.svg"
+                class="controls__item-icon header__notifications-icon"
+              />
+              <span class="header__notifications-value">3</span>
+            </div>
+          </div>
+          <div class="header__profile">
+            <img src="./assets/images/userpic.png" class="profile__icon" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper">
+        <aside class="sidebar main__sidebar sidebar_hidden">
+          <div class="sidebar__links">
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/home.svg"
+                class="side-link__image"
+                style="fill: #ff0000"
+              /><span class="side-link__text">Home</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/trending.svg"
+                class="side-link__image"
+              /><span class="side-link__text">Trending</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/subscriptions.svg"
+                class="side-link__image"
+              /><span class="side-link__text">Subscriptions</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/library.svg"
+                class="side-link__image"
+              /><span class="side-link__text">Library</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/history.svg"
+                class="side-link__image"
+              /><span class="side-link__text">History</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img src="./assets/svg/clock.svg" class="side-link__image" /><span
+                class="side-link__text"
+                >Watch later</span
+              >
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/favourites.svg"
+                class="side-link__image"
+              /><span class="side-link__text">Favourites</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img src="./assets/svg/heart.svg" class="side-link__image" /><span
+                class="side-link__text"
+                >Liked videos</span
+              >
+            </div>
+            <div class="sidebar__link side-link">
+              <img src="./assets/svg/music.svg" class="side-link__image" /><span
+                class="side-link__text"
+                >Music</span
+              >
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/gamepad.svg"
+                class="side-link__image"
+              /><span class="side-link__text">Games</span>
+            </div>
+            <div class="sidebar__link side-link">
+              <img
+                src="./assets/svg/more-arrow.svg"
+                class="side-link__image"
+              /><span class="side-link__text">Show more</span>
+            </div>
+          </div>
+          <div class="sidebar__subscriptions subscriptions">
+            <h3 class="subscriptions__title">Subscriptions</h3>
+            <div class="subscriptions__item subscription-link sidebar__link">
+              <img
+                src="./assets/images/userpic-1.png"
+                class="subscription-link__icon"
+              /><span class="subscriptions__item-text">Gussie Singleton</span>
+            </div>
+            <div class="subscriptions__item subscription-link sidebar__link">
+              <img
+                src="./assets/images/userpic-2.png"
+                class="subscription-link__icon"
+              /><span class="subscriptions__item-text">Nora Francis</span>
+            </div>
+            <div class="subscriptions__item subscription-link sidebar__link">
+              <img
+                src="./assets/images/userpic-3.png"
+                class="subscription-link__icon"
+              /><span class="subscriptions__item-text">Belle Briggs</span>
+            </div>
+            <div class="subscriptions__item subscription-link sidebar__link">
+              <img
+                src="./assets/images/userpic-4.png"
+                class="subscription-link__icon"
+              /><span class="subscriptions__item-text">Eunice Cortez</span>
+            </div>
+            <div class="subscriptions__item subscription-link sidebar__link">
+              <img
+                src="./assets/images/userpic-5.png"
+                class="subscription-link__icon"
+              /><span class="subscriptions__item-text">Emma Hanson</span>
+            </div>
+            <div class="subscriptions__item subscription-link sidebar__link">
+              <img
+                src="./assets/images/userpic-6.png"
+                class="subscription-link__icon"
+              /><span class="subscriptions__item-text">Leah Berry</span>
+            </div>
+          </div>
+          <div class="sidebar__link side-link sidebar__settings-link">
+            <img
+              src="./assets/svg/settings-gear.svg"
+              class="side-link__image"
+            /><span class="side-link__text">Settings</span>
+          </div>
+        </aside>
+
+        <div class="video-page__content">
+          <section class="video">
+            <div class="video__video-container">
+              <img
+                src="./assets/images/video-image-16.png"
+                class="video__player"
+              />
+            </div>
+
+            <div class="video__description video-description">
+              <div class="video-description__left-side-container">
+                <h3 class="video-description__title">
+                  Dude You Re Getting A Telescope
+                </h3>
+                <p class="video-description__views caption">
+                  <span class="video-description__views-value">123k</span>views
+                </p>
+              </div>
+              <div class="video-description__right-side-container">
+                <button class="light-button video-description__button">
+                  <img
+                    src="./assets/svg/finger-up.svg"
+                    class="light-button__icon"
+                  />
+                  <span class="video-description__button-text"
+                    ><span class="video-description__liked-value">123k</span
+                    >views</span
+                  >
+                </button>
+                <button class="light__button video-description__button">
+                  <img
+                    src="./assets/svg/finger-down.svg"
+                    class="light-button__icon"
+                  />
+                  <span class="video-description__button-text"
+                    ><span class="video-description__unliked-value">435k</span
+                    >views</span
+                  >
+                </button>
+                <button class="light__button video-description__button">
+                  <img
+                    src="./assets/svg/share.svg"
+                    class="light-button__icon"
+                  />
+                  <span class="video-description__button-text">Share</span>
+                </button>
+                <button class="video-description__more">
+                  <img
+                    src="./assets/svg/more.svg"
+                    class="video-description__more-icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="video__info video-info">
+              <div class="video-info__left-side-container">
+                <img
+                  src="assets/images/userpic-7.png"
+                  class="video-info__icon"
+                />
+                <h3 class="video-info__title">Food & Drink</h3>
+                <p class="video-info__published">
+                  Published on
+                  <span class="video-info__published-value">14 jun 2019</span>
+                </p>
+                <p class="video-info__text">
+                  A successful marketing plan relies heavily on the
+                  pulling-power of advertising copy. Writing result-oriented ad
+                  copy is difficult, as it must appeal to, entice, and convince
+                  consumers to take action. There is no magic formula to write
+                  perfect ad copy; it is based on a number of factors, including
+                  ad placement, demographic, even the consumer’s mood when they
+                  see your ad.
+                </p>
+                <button class="video-info__show-more-button">Show more</button>
+              </div>
+              <div class="video-info__right-side-container">
+                <button class="button video-info__button">
+                  Subscribe <span class="button-value">2.3m</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="video__other-videos-container other-videos-container">
+              <div class="other-videos-container__header">
+                <h3 class="other-videos-container__title">Next</h3>
+                <div class="other-videos-container__autoplay">
+                  <h5 class="other-videos-container__autoplay-title">
+                    Autoplay
+                  </h5>
+                  <img
+                    src="./assets/svg/reducer.svg"
+                    class="other-videos-container__autoplay-reducer"
+                  />
+                </div>
+              </div>
+
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-9.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time caption"
+                    >7:08</span
+                  >
+                </div>
+                <h4 class="video-preview__title">Astronomy Or Astrology</h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">240k views</span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >4 months ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Food & Drink</span
+                  >
+                </div>
+              </div>
+
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-10.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time caption"
+                    >2:19</span
+                  >
+                </div>
+                <h4 class="video-preview__title">Advertising Outdoors</h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">13k views</span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >15 days ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Food & Drink</span
+                  >
+                </div>
+              </div>
+
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-11.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time caption"
+                    >9:05</span
+                  >
+                </div>
+                <h4 class="video-preview__title">Radio Astronomy</h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">1k views</span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >11 months ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Food & Drink</span
+                  >
+                </div>
+              </div>
+
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-12.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time caption"
+                    >7:08</span
+                  >
+                </div>
+                <h4 class="video-preview__title">
+                  A Brief History Of Creation
+                </h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">80k views </span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >3 days ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Dollie Blair</span
+                  >
+                </div>
+              </div>
+
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-13.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time caption"
+                    >3:40</span
+                  >
+                </div>
+                <h4 class="video-preview__title">A Good Autoresponder</h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">45k views</span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >2 months ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Food & Drink</span
+                  >
+                </div>
+              </div>
+
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-14.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time caption"
+                    >1:56</span
+                  >
+                </div>
+                <h4 class="video-preview__title">Baby Monitor Technology</h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">86k views</span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >7 days ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Food & Drink</span
+                  >
+                </div>
+              </div>
+
+              <div class="video-preview video-preview__small">
+                <div
+                  class="video-preview__show-container show-container show-container_small"
+                >
+                  <img
+                    src="./assets/images/video-image-14.jpg"
+                    alt="image desc"
+                    class="video-preview__show video-preview__show_small show show_small"
+                  />
+                  <span class="video-preview__time show__time caption"
+                    >4:15</span
+                  >
+                </div>
+                <h4 class="video-preview__title">Asteroids</h4>
+                <div class="video-preview__details">
+                  <span class="video-preview__views caption">123k views</span>
+                  <span class="video-preview__time show__time-ago caption"
+                    >4 months ago</span
+                  >
+                  <span class="video-preview__author caption"
+                    >Food & Drink</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
