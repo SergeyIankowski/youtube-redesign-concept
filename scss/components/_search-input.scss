@@ -21,7 +21,7 @@
   }
 }
 
-@media (max-width: $breakpoint-one) {
+@media (max-width: $breakpoint-two) {
   .search-input {
     padding-left: 0;
     .search-input__field {
@@ -29,7 +29,7 @@
     }
   }
 }
-@media (max-width: $breakpoint-two) {
+@media (max-width: $breakpoint-three) {
   .search-input {
     .search-input__field {
       width: 200px;

@@ -2,6 +2,8 @@
   position: relative;
   width: 540px;
   height: 250px;
+  overflow: hidden;
+  z-index: 2;
 }
 .show-container_small {
   width: 250px;
@@ -9,7 +11,6 @@
 }
 .show {
   border-radius: 14px;
-  z-index: 2;
   width: inherit;
   height: inherit;
 }
@@ -19,13 +20,18 @@
 }
 .show__time {
   position: absolute;
-  bottom: 14px;
+  bottom: 10px;
   right: 10px;
   padding: 3px 9px;
   border-radius: 12px;
-  background-color: $time-duration-caption-bg-color;
   color: $time-duration-text-color;
-  font: normal 400 14px/18px "Mulish", sans-serif;
+  background-color: $time-duration-caption-bg-color;
+}
+@media (max-width: $breakpoint-two) {
+  .show-container_channel-page {
+    width: 250px;
+    height: 150px;
+  }
 }
 @media (max-width: $mobile) {
   .show-container {

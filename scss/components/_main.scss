@@ -1,7 +1,7 @@
 .main {
   .wrapper {
     display: grid;
-    grid-template-columns: 250px minmax(200px, 1fr);
+    grid-template-columns: min-content minmax(200px, 1fr);
     grid-auto-flow: column;
     grid-auto-columns: minmax(200px, 1fr);
   }
@@ -11,6 +11,9 @@
   flex-direction: column;
   gap: 49px;
   padding: 0 5px;
+}
+.main__content_channel-page {
+  gap: 33px;
 }
 
 @media (max-width: $tablet) {
@@ -25,5 +28,8 @@
 @media (max-width: $mobile) {
   .main__content {
     padding: 0 16px 80px;
+  }
+  .main__content_channel-page {
+    gap: 21px;
   }
 }

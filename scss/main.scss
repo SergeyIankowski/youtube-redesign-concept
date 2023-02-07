@@ -3,6 +3,7 @@
 @import "./base/global";
 
 @import "./components/wrapper";
+@import "./components/caption";
 @import "./components/header";
 @import "./components/search-input";
 @import "./components/hamburger";
@@ -10,7 +11,11 @@
 @import "./components/sidebar";
 @import "./components/sidebar-link";
 @import "./components/subscriptions";
+@import "./components/subscription-link";
+@import "./components/show";
 @import "./components/preview-container";
 @import "./components/video-preview";
-@import './components/show';
 @import "./components/buttons";
+@import "./components/channel-page";
+@import "./components/section-links";
+@import "./components/video-description";
