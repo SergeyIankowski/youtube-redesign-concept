@@ -1,0 +1,127 @@
+.channel-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding: 0 65px 0 0;
+  transform: translateY(-20px);
+}
+.channel-page__image {
+  background-image: url("../../assets/images/channelimage.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  height: 280px;
+}
+.channel-page__main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.channel-page__header {
+  display: flex;
+  justify-content: space-between;
+}
+.channel-page__header-left-side-container {
+  display: grid;
+  grid-template-areas: "a b" "a c";
+  gap: 1px 14px;
+}
+.channel-page__logo {
+  grid-area: a;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.channel-page__owner-name {
+  grid-area: b;
+  align-self: end;
+
+  font: normal bold 26px/33px "Mulish", sans-serif;
+}
+.channel-page__subscription-info {
+  grid-area: c;
+  align-self: start;
+}
+.channel-page__header-right-side-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: flex-start;
+}
+.channel-page__main-container {
+  display: grid;
+  grid-template-areas: "a b" "c b";
+  row-gap: 59px;
+}
+.channel-page__sections-links {
+  grid-area: a;
+}
+.channel-page__video-description {
+  grid-area: c;
+}
+.channel-page__subscriptions {
+  grid-area: b;
+  margin-right: 78px;
+  width: 194px;
+  padding-top: 3px;
+}
+@media (max-width: $breakpoint-two) {
+  .channel-page {
+    padding: 0;
+  }
+  .channel-page__subscriptions {
+    display: none;
+  }
+  .channel-page__main-container {
+    row-gap: 0;
+  }
+}
+@media (max-width: $mobile) {
+  .channel-page {
+    gap: 0;
+    transform: translateY(0);
+  }
+  .channel-page__image {
+    height: 100px;
+    border-radius: 0;
+    margin: 0 -16px;
+  }
+  .channel-page__main {
+    gap: 31px;
+  }
+  .channel-page__owner-name {
+    font: normal 700 20px/25px "Mulish", sans-serif;
+  }
+  .channel-page__logo {
+    width: 70px;
+    height: 70px;
+  }
+  .channel-page__header-left-side-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-top: -35px;
+  }
+  .channel-page__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .channel-page__header-right-side-container {
+    align-self: auto;
+    gap: 0;
+  }
+  .channel-page__subscription-info {
+    font: normal normal 12px/15px "Mulish", sans-serif;
+  }
+  .channel-page__notification-icon {
+    display: none;
+  }
+  .channel-page__button {
+    width: 120px;
+    height: 34px;
+  }
+}
