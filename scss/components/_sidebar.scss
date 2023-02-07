@@ -5,8 +5,11 @@
 
   padding-left: 28px;
 
-  width: 255px;
+  width: 250px;
   height: 1086px;
+}
+.sidebar_hidden {
+  display: none;
 }
 
 .sidebar__links {
@@ -34,6 +37,7 @@
 }
 .sidebar__settings-link {
   padding-left: 7px;
+  margin-top: 105px;
 }
 
 @media (max-width: $tablet) {
