@@ -7,7 +7,7 @@
   transform: translateY(-20px);
 }
 .channel-page__image {
-  background-image: url("../../assets/images/channelimage.png");
+  background-image: url('../../assets/images/channelimage.png');
   background-size: cover;
   background-position: center;
   border-radius: 14px;
@@ -24,7 +24,7 @@
 }
 .channel-page__header-left-side-container {
   display: grid;
-  grid-template-areas: "a b" "a c";
+  grid-template-areas: 'a b' 'a c';
   gap: 1px 14px;
 }
 .channel-page__logo {
@@ -38,7 +38,7 @@
   grid-area: b;
   align-self: end;
 
-  font: normal bold 26px/33px "Mulish", sans-serif;
+  font: normal bold 26px/33px 'Mulish', sans-serif;
 }
 .channel-page__subscription-info {
   grid-area: c;
@@ -52,7 +52,7 @@
 }
 .channel-page__main-container {
   display: grid;
-  grid-template-areas: "a b" "c b";
+  grid-template-areas: 'a b' 'c b';
   row-gap: 59px;
 }
 .channel-page__sections-links {
@@ -92,7 +92,7 @@
     gap: 31px;
   }
   .channel-page__owner-name {
-    font: normal 700 20px/25px "Mulish", sans-serif;
+    font: normal 700 20px/25px 'Mulish', sans-serif;
   }
   .channel-page__logo {
     width: 70px;
@@ -115,7 +115,7 @@
     gap: 0;
   }
   .channel-page__subscription-info {
-    font: normal normal 12px/15px "Mulish", sans-serif;
+    font: normal normal 12px/15px 'Mulish', sans-serif;
   }
   .channel-page__notification-icon {
     display: none;

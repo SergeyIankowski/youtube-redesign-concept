@@ -1,5 +1,5 @@
 .button {
-  font: normal 400 16px/20px "Mulish", sans-serif;
+  font: normal 400 16px/20px 'Mulish', sans-serif;
   padding: 10px 19px;
   background-color: $button-bg-color;
   border: 0;
@@ -8,11 +8,23 @@
   width: 154px;
   height: 40px;
 }
+.light-button {
+  font: normal 400 16px/20px 'Mulish', sans-serif;
+  width: 100px;
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
+}
 @media (max-width: $breakpoint-two) {
   .button {
-    font: normal 400 12px/14px "Mulish", sans-serif;
+    font: normal 400 12px/14px 'Mulish', sans-serif;
     padding: 5px;
     width: 95px;
     height: 40px;
+  }
+}
+@media (max-width: $mobile) {
+  .light-button {
+    width: 87px;
   }
 }

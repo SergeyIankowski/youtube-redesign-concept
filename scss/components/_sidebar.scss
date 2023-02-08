@@ -54,6 +54,9 @@
     height: auto;
     z-index: 3;
   }
+  .sidebar_hidden {
+    display: flex;
+  }
   .sidebar__links {
     flex-direction: row;
     padding-left: 0;
