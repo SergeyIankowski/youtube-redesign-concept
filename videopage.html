@@ -16,7 +16,9 @@
             <div class="hamburger__line"></div>
             <div class="hamburger__line"></div>
           </div>
-          <img src="./assets/svg/logo.svg" alt="logo icon" class="logo" />
+          <a href="./main.html">
+            <img src="./assets/svg/logo.svg" alt="logo icon" class="logo" />
+          </a>
           <div class="header__input search-input">
             <input
               type="text"
@@ -59,7 +61,7 @@
         </div>
       </div>
     </header>
-    <main class="main">
+    <main class="main main_sidebar-hidden">
       <div class="wrapper">
         <aside class="sidebar main__sidebar sidebar_hidden">
           <div class="sidebar__links">
@@ -178,87 +180,100 @@
           </div>
         </aside>
 
-        <div class="video-page__content">
+        <div class="video-page__content main__content">
           <section class="video">
             <div class="video__video-container">
-              <img
-                src="./assets/images/video-image-16.png"
-                class="video__player"
-              />
-            </div>
+              <div class="video__player">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/hFoKgX3IHY4"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
 
-            <div class="video__description video-description">
-              <div class="video-description__left-side-container">
-                <h3 class="video-description__title">
-                  Dude You Re Getting A Telescope
-                </h3>
-                <p class="video-description__views caption">
-                  <span class="video-description__views-value">123k</span>views
-                </p>
+              <div class="video__description video-page-description">
+                <div class="video-page-description__left-side-container">
+                  <h3 class="video-page-description__title">
+                    Dude You Re Getting A Telescope
+                  </h3>
+                  <p class="video-page-description__views caption">
+                    <span class="video-page-description__views-value"
+                      >123k</span
+                    >
+                    views
+                  </p>
+                </div>
+                <div class="video-page-description__right-side-container">
+                  <button class="light-button video-page-description__button">
+                    <img
+                      src="./assets/svg/finger-up.svg"
+                      class="light-button__icon"
+                    />
+                    <span
+                      class="video-page-description__button-text video-page-description__liked-value"
+                      >123k</span
+                    >
+                  </button>
+                  <button class="light-button video-page-description__button">
+                    <img
+                      src="./assets/svg/finger-down.svg"
+                      class="light-button__icon"
+                    />
+                    <span
+                      class="video-page-description__button-text video-page-description__unliked-value"
+                      >435k</span
+                    >
+                  </button>
+                  <button class="light-button video-page-description__button">
+                    <img
+                      src="./assets/svg/share.svg"
+                      class="light-button__icon"
+                    />
+                    <span class="video-page-description__button-text"
+                      >Share</span
+                    >
+                  </button>
+                  <button class="video-page-description__more-button">
+                    <img
+                      src="./assets/svg/more.svg"
+                      class="video-page-description__more-button-icon"
+                    />
+                  </button>
+                </div>
               </div>
-              <div class="video-description__right-side-container">
-                <button class="light-button video-description__button">
-                  <img
-                    src="./assets/svg/finger-up.svg"
-                    class="light-button__icon"
-                  />
-                  <span class="video-description__button-text"
-                    ><span class="video-description__liked-value">123k</span
-                    >views</span
-                  >
-                </button>
-                <button class="light__button video-description__button">
-                  <img
-                    src="./assets/svg/finger-down.svg"
-                    class="light-button__icon"
-                  />
-                  <span class="video-description__button-text"
-                    ><span class="video-description__unliked-value">435k</span
-                    >views</span
-                  >
-                </button>
-                <button class="light__button video-description__button">
-                  <img
-                    src="./assets/svg/share.svg"
-                    class="light-button__icon"
-                  />
-                  <span class="video-description__button-text">Share</span>
-                </button>
-                <button class="video-description__more">
-                  <img
-                    src="./assets/svg/more.svg"
-                    class="video-description__more-icon"
-                  />
-                </button>
-              </div>
-            </div>
 
-            <div class="video__info video-info">
-              <div class="video-info__left-side-container">
-                <img
-                  src="assets/images/userpic-7.png"
-                  class="video-info__icon"
-                />
-                <h3 class="video-info__title">Food & Drink</h3>
-                <p class="video-info__published">
-                  Published on
-                  <span class="video-info__published-value">14 jun 2019</span>
-                </p>
-                <p class="video-info__text">
-                  A successful marketing plan relies heavily on the
-                  pulling-power of advertising copy. Writing result-oriented ad
-                  copy is difficult, as it must appeal to, entice, and convince
-                  consumers to take action. There is no magic formula to write
-                  perfect ad copy; it is based on a number of factors, including
-                  ad placement, demographic, even the consumer’s mood when they
-                  see your ad.
-                </p>
-                <button class="video-info__show-more-button">Show more</button>
-              </div>
-              <div class="video-info__right-side-container">
-                <button class="button video-info__button">
-                  Subscribe <span class="button-value">2.3m</span>
-                </button>
+              <div class="video__info video-info">
+                <div class="video-info__left-side-container">
+                  <div class="video-info__icon">
+                    <img src="assets/images/userpic-7.png" />
+                  </div>
+                  <h3 class="video-info__title">Food & Drink</h3>
+                  <p class="video-info__published">
+                    Published on
+                    <span class="video-info__published-value">14 jun 2019</span>
+                  </p>
+                  <p class="video-info__text">
+                    A successful marketing plan relies heavily on the
+                    pulling-power of advertising copy. Writing result-oriented
+                    ad copy is difficult, as it must appeal to, entice, and
+                    convince consumers to take action. There is no magic formula
+                    to write perfect ad copy; it is based on a number of
+                    factors, including ad placement, demographic, even the
+                    consumer’s mood when they see your ad.
+                  </p>
+                  <button class="video-info__show-more-button">
+                    Show more
+                  </button>
+                </div>
+                <div class="video-info__right-side-container">
+                  <button class="button video-info__button">
+                    Subscribe <span class="button-value">2.3m</span>
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -278,7 +293,7 @@
 
               <div class="video-preview video-preview__small">
                 <div
-                  class="video-preview__show-container show-container show-container_small"
+                  class="video-preview__show-container show-container show-container_videopage"
                 >
                   <img
                     src="./assets/images/video-image-9.jpg"
@@ -289,12 +304,9 @@
                     >7:08</span
                   >
                 </div>
-                <h4 class="video-preview__title">Astronomy Or Astrology</h4>
+                <h4 class="video-preview__title">Baby Monitor Technology</h4>
                 <div class="video-preview__details">
                   <span class="video-preview__views caption">240k views</span>
-                  <span class="video-preview__time show__time-ago caption"
-                    >4 months ago</span
-                  >
                   <span class="video-preview__author caption"
                     >Food & Drink</span
                   >
@@ -303,7 +315,7 @@
 
               <div class="video-preview video-preview__small">
                 <div
-                  class="video-preview__show-container show-container show-container_small"
+                  class="video-preview__show-container show-container show-container_videopage"
                 >
                   <img
                     src="./assets/images/video-image-10.jpg"
@@ -314,12 +326,9 @@
                     >2:19</span
                   >
                 </div>
-                <h4 class="video-preview__title">Advertising Outdoors</h4>
+                <h4 class="video-preview__title">A Good Autoresponder</h4>
                 <div class="video-preview__details">
                   <span class="video-preview__views caption">13k views</span>
-                  <span class="video-preview__time show__time-ago caption"
-                    >15 days ago</span
-                  >
                   <span class="video-preview__author caption"
                     >Food & Drink</span
                   >
@@ -328,7 +337,7 @@
 
               <div class="video-preview video-preview__small">
                 <div
-                  class="video-preview__show-container show-container show-container_small"
+                  class="video-preview__show-container show-container show-container_videopage"
                 >
                   <img
                     src="./assets/images/video-image-11.jpg"
@@ -339,12 +348,9 @@
                     >9:05</span
                   >
                 </div>
-                <h4 class="video-preview__title">Radio Astronomy</h4>
+                <h4 class="video-preview__title">Selecting The Right Hotel</h4>
                 <div class="video-preview__details">
                   <span class="video-preview__views caption">1k views</span>
-                  <span class="video-preview__time show__time-ago caption"
-                    >11 months ago</span
-                  >
                   <span class="video-preview__author caption"
                     >Food & Drink</span
                   >
@@ -353,7 +359,7 @@
 
               <div class="video-preview video-preview__small">
                 <div
-                  class="video-preview__show-container show-container show-container_small"
+                  class="video-preview__show-container show-container show-container_videopage"
                 >
                   <img
                     src="./assets/images/video-image-12.jpg"
@@ -380,7 +386,7 @@
 
               <div class="video-preview video-preview__small">
                 <div
-                  class="video-preview__show-container show-container show-container_small"
+                  class="video-preview__show-container show-container show-container_videopage"
                 >
                   <img
                     src="./assets/images/video-image-13.jpg"
@@ -405,7 +411,7 @@
 
               <div class="video-preview video-preview__small">
                 <div
-                  class="video-preview__show-container show-container show-container_small"
+                  class="video-preview__show-container show-container show-container_videopage"
                 >
                   <img
                     src="./assets/images/video-image-14.jpg"
@@ -430,7 +436,7 @@
 
               <div class="video-preview video-preview__small">
                 <div
-                  class="video-preview__show-container show-container show-container_small"
+                  class="video-preview__show-container show-container show-container_videopage"
                 >
                   <img
                     src="./assets/images/video-image-14.jpg"
@@ -457,5 +463,6 @@
         </div>
       </div>
     </main>
+    <script src="./videopage.html"></script>
   </body>
 </html>
