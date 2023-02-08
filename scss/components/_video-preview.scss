@@ -1,18 +1,30 @@
 .video-preview {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 11px;
 }
 .video-preview__show-container {
   position: relative;
 }
 .video-preview__title {
   padding-top: 5px;
-  font: normal 700 16px/20px "Mulish", sans-serif;
+  font: normal 700 16px/20px 'Mulish', sans-serif;
 }
 .video-preview__details {
   display: flex;
   justify-content: space-between;
-  font: normal 400 13px/16px "Mulish", sans-serif;
+  font: normal 400 26px/33px 'Mulish', sans-serif;
   color: $video-preview-caption-text-color;
+}
+@media (max-width: $mobile) {
+  .video-preview__title {
+    font: normal 700 16px/20px 'Mulish', sans-serif;
+  }
+  .video-preview {
+    align-items: center;
+    gap: 4px;
+  }
+  .video-preview_channel-page {
+    align-items: stretch;
+  }
 }
