@@ -7,14 +7,18 @@
   padding: 17px 0 15px 0;
 }
 .video-description__title {
-  font: normal bold 26px/34px "Mulish", sans-serif;
+  font: normal bold 26px/34px 'Mulish', sans-serif;
   margin-bottom: 10px;
   padding-right: 240px;
 }
 .video-description__text {
-  font: normal normal 16px/22px "Mulish", sans-serif;
+  font: normal normal 16px/22px 'Mulish', sans-serif;
   margin-bottom: 30px;
   padding-right: 220px;
+}
+.video-description__more {
+  border: 0;
+  background-color: transparent;
 }
 @media (max-width: $breakpoint-one) {
   .video-description__title {

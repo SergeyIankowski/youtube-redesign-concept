@@ -6,16 +6,34 @@
     grid-auto-columns: minmax(200px, 1fr);
   }
 }
+.main_sidebar-hidden {
+  .wrapper {
+    display: block;
+    .main__content {
+      margin: 0 60px 0 80px;
+    }
+  }
+  width: 100%;
+}
 .main__content {
   display: flex;
   flex-direction: column;
-  gap: 49px;
+  gap: 35px;
   padding: 0 5px;
 }
 .main__content_channel-page {
   gap: 33px;
 }
 
+@media (max-width: $breakpoint-two) {
+  .main_sidebar-hidden {
+    .wrapper {
+      .main__content {
+        margin: 0 5px;
+      }
+    }
+  }
+}
 @media (max-width: $tablet) {
   .main {
     .wrapper {

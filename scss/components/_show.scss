@@ -9,6 +9,10 @@
   width: 250px;
   height: 150px;
 }
+.show-container_videopage {
+  width: 367px;
+  height: 213px;
+}
 .show {
   border-radius: 14px;
   width: inherit;
@@ -29,6 +33,10 @@
 }
 @media (max-width: $breakpoint-two) {
   .show-container_channel-page {
+    width: 250px;
+    height: 150px;
+  }
+  .show-container_videopage {
     width: 250px;
     height: 150px;
   }
